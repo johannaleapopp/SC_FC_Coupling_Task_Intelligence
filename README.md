@@ -30,7 +30,8 @@ For the preparation of data from the HCP sample, the scripts should be run in th
 3.	`HCP_prepare_SC_data_with_subcortical`: Preparation of structural connectivity matrices and creation of cell that is used for further analyses.
 4.	`HCP_prepare_FC_resting_state_data_with_subcortical`: Preparation of resting-state functional connectivity matrices and creation of a cell that is used for further analyses. Included is: a) import of subject ID’s and time course data for all four runs (save in cell) b) exclusion of subjects that don’t have all four scans completed c) matching up node order according to node order of SC matrices d) computation of functional connectivity matrices from time courses e) averaging across all FC matrices for each subject and f) Fisher-z transformation of individual mean connectivity matrices.
 
-*Motion Correction*  
+*Motion Correction* 
+
 5.	`HCP_motion_data_import_resting_state`: Import of data for motion correction for 4 resting-state fMRI scans and creation of respective table.  
 6.	`HCP_motion_correction_resting_state`: This script is used for motion correction with data from framewise displacement (FD). It includes a) definition of resting-state scans that need to be excluded b) computation of mean FD values across the remaining scans that are used for confound regression. Lastly, FC matrices are excluded based on the motion criteria and ultimately saved as final FC matrices and mean FD values in a table used for further analyses.  
 7.	`HCP_motion_data_import_task_x`: There is one script for each task condition: Import of data for motion correction for 2 task-based fMRI scans and creation of respective table.  
@@ -39,6 +40,7 @@ For the preparation of data from the HCP sample, the scripts should be run in th
 9. `HCP_find_subjects_with_complete_data`: Merging of all tables (behavioral data; SC matrices and FC matrices) and creation of final tables for subjects that have all data.  
 
 *Compute Coupling*  
+
 10. `HCP_compute_coupling_measures_resting_state`: This script is based on a source script from Zamani Esfahlani et al. (2022) and was adjusted accordingly. It performs the computation of communication and similarity matrices based on SC connectivity matrices and calculates coupling measure specific coupling values by correlating regional connectivity profiles of the communication/similarity matrix with the respective FC matrix.  
 11. `HCP_compute_coupling_measures_task_x`: This script is based on a source script from Zamani Esfahlani et al. (2022) and was adjusted accordingly. It calculates coupling measure-specific coupling values by correlating regional connectivity profiles of the communication/similarity matrix (computed with `HCP_compute_coupling_measures_resting_state`) with the respective FC matrix.  
 
@@ -52,15 +54,17 @@ For the preparation of data from the AOMIC PIOP1 and AOMIC PIOP2 samples, the sc
 3.	`AOMIC_PIOP1_PIOP2_prepare_FC_matrices`: Preparation of functional connectivity matrices and creation of a cell that is used for further analyses. Included is: a) computation of functional connectivity matrix from time courses and b) Fisher-z transformation of the individual mean connectivity matrices.
 4.	`AOMIC_PIOP1_PIOP2_find_subjects_with_complete_data`: Detection of subjects with complete datasets (behavioral data, SC matrices, FC matrices and FD data) and creation of final tables used for further analyses. Please note that this script is divided into two parts: Part 1 needs to be run before ‘Compute Coupling’ folder and part 2 after ‘Compute Coupling’ folder.
 
-*Compute Coupling*
+*Compute Coupling*  
 
-*AOMIC PIOP1*
-5.	`AOMIC_PIOP1_compute_coupling_measures_resting_state`: This script is based on a source script from Zamani Esfahlani et al. (2022) and was adjusted accordingly. It performs the computation of communication and similarity matrices based on SC connectivity matrices and calculates coupling measure-specific coupling values by correlating regional connectivity profiles of communication/similarity matrices with the respective FC matrix.
-6.	`AOMIC_PIOP1_compute_coupling_measures_task_x`: This script based on a source script from Esfahlani et al. (2022) and was adjusted accordingly. It calculates coupling measure-specific coupling values by correlating regional connectivity profiles of the communication/similarity matrix (computed with `AOMIC_PIOP1_compute_coupling_measures_resting_state`) with the respective FC matrix
+*AOMIC PIOP1*  
 
-*AOMIC PIOP2*
-7.	`AOMIC_PIOP2_compute_coupling_measures_resting_state`: This script is based on a source script from Zamani Esfahlani et al. (2022) and was adjusted accordingly. It performs the computation of communication and similarity matrices based on SC connectivity matrices and calculates coupling measure-specific coupling values by correlating regional connectivity profiles of communication/similarity matrices with the respective FC matrix.
-8.	`AOMIC_PIOP2_compute_coupling_measures_task_x`: This script based on a source script from Esfahlani et al. (2022) and was adjusted accordingly. It calculates coupling measure-specific coupling values by correlating regional connectivity profiles of the communication/similarity matrix (computed with `AOMIC_PIOP2_compute_coupling_measures_resting_state`) with the respective FC matrix.
+5.	`AOMIC_PIOP1_compute_coupling_measures_resting_state`: This script is based on a source script from Zamani Esfahlani et al. (2022) and was adjusted accordingly. It performs the computation of communication and similarity matrices based on SC connectivity matrices and calculates coupling measure-specific coupling values by correlating regional connectivity profiles of communication/similarity matrices with the respective FC matrix.  
+6.	`AOMIC_PIOP1_compute_coupling_measures_task_x`: This script based on a source script from Esfahlani et al. (2022) and was adjusted accordingly. It calculates coupling measure-specific coupling values by correlating regional connectivity profiles of the communication/similarity matrix (computed with `AOMIC_PIOP1_compute_coupling_measures_resting_state`) with the respective FC matrix.  
+
+*AOMIC PIOP2*  
+
+7.	`AOMIC_PIOP2_compute_coupling_measures_resting_state`: This script is based on a source script from Zamani Esfahlani et al. (2022) and was adjusted accordingly. It performs the computation of communication and similarity matrices based on SC connectivity matrices and calculates coupling measure-specific coupling values by correlating regional connectivity profiles of communication/similarity matrices with the respective FC matrix.  
+8.	`AOMIC_PIOP2_compute_coupling_measures_task_x`: This script based on a source script from Esfahlani et al. (2022) and was adjusted accordingly. It calculates coupling measure-specific coupling values by correlating regional connectivity profiles of the communication/similarity matrix (computed with `AOMIC_PIOP2_compute_coupling_measures_resting_state`) with the respective FC matrix.  
 
 ### 5.3. Analysis Scripts
 
