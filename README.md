@@ -37,16 +37,15 @@ For the preparation of data from the HCP sample, the scripts should be run in th
 7.	`HCP_motion_data_import_task_x`: There is one script for each task condition: Import of data for motion correction for 2 task-based fMRI scans and creation of respective table.  
 8.	`HCP_motion_data_correction_task_x`: There is one script for each task condition used for motion correction with data from framewise displacement (FD). It includes a) definition of task-based scans that need to be excluded b) computation of mean FD values across the remaining scans that are used for confound regression. Lastly, FC matrices are excluded based on the motion criteria and ultimately saved as final FC matrices and mean FD values in a table used for further analyses.  
 <br>
-<br>
-9. `HCP_find_subjects_with_complete_data`: Merging of all tables (behavioral data; SC matrices and FC matrices) and creation of final tables for subjects that have all data.  
 
+9. `HCP_find_subjects_with_complete_data`: Merging of all tables (behavioral data; SC matrices and FC matrices) and creation of final tables for subjects that have all data.  
 
 *Compute Coupling*  
 
 10. `HCP_compute_coupling_measures_resting_state`: This script is based on a source script from Zamani Esfahlani et al. (2022) and was adjusted accordingly. It performs the computation of communication and similarity matrices based on SC connectivity matrices and calculates coupling measure specific coupling values by correlating regional connectivity profiles of the communication/similarity matrix with the respective FC matrix.  
 11. `HCP_compute_coupling_measures_task_x`: This script is based on a source script from Zamani Esfahlani et al. (2022) and was adjusted accordingly. It calculates coupling measure-specific coupling values by correlating regional connectivity profiles of the communication/similarity matrix (computed with `HCP_compute_coupling_measures_resting_state`) with the respective FC matrix.  
 <br>
-<br>
+
 12. `HCP_split_lockbox_sample`: This script is used to partition the main sample (HCP) into a primary main sample (70%) and a lockbox sample (30%) to be able to conduct an initial replication. It takes into account the family structure in the HCP and makes sure that all families are in the same sample to keep them truly independent from one another.
 
 
