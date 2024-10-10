@@ -121,6 +121,60 @@ In order to perform the analyses conducted in the replication samples, the scrip
 7.	`HCP_532_visualization_differences_in_coupling_between_tasks`: This script is used to quantify and visualize task-dependent adaptations in SC-FC coupling in the main sample (HCP532).
 8.	`HCP_532_visualization_task_specific_task_general_adaptations_bar_plot`: Creation of bar graphs for visualizing comparison between task-general and task-specific adaptations in SC-FC coupling the main sample (HCP532). 
 
+### 5.5. Posthoc Control Analyses 
+
+*Control Analysis Equal Frame Length* 
+Scripts found in this folder were used to conduct a control analysis where all scans were shortened to equal frame length (176 frames) in the main sample (HCP532). Other than the differing data, scripts were not changed and named similarly (see above for description). 
+
+### 5.6. Functions 
+External functions and their licences can be found in this folder.
+
+## 6. Software Requirements 
+
++ Matlab version 2021a
++ R version 4.0.2 (For the computation of the latent *g*-factor)
+
+## 7.	Functions 
+
+Functions used in the scripts can be found in the functions folder. Some of the functions can be found elsewhere e.g., as part of the brain connectivity toolbox (Rubinov & Sporns, 2010, https://sites.google.com/site/bctnet/). Comments on the authorship and licenses of these functions are provided within the folder.
+
+**References**
+Civier, O., Smith, R. E., Yeh, C.-H., Connelly, A., & Calamante, F. (2019). Is removal of weak connections necessary for graph-theoretical analysis of dense weighted structural connectomes from diffusion MRI? NeuroImage, 194, 68–81. https://doi.org/10.1016/j.neuroimage.2019.02.039
+
+Cole, M. W., Ito, T., Schultz, D., Mill, R., Chen, R., & Cocuzza, C. (2019). Task activations produce spurious but systematic inflation of task functional connectivity estimates. NeuroImage, 189, 1–18. https://doi.org/10.1016/j.neuroimage.2018.12.054
+
+Dubois, J., Galdi, P., Han, Y., Paul, L. K., & Adolphs, R. (2018). Resting-State Functional Brain Connectivity Best Predicts the Personality Dimension of Openness to Experience. Personality Neuroscience, 1, e6. https://doi.org/10.1017/pen.2018.8
+
+Esteban, O., Markiewicz, C. J., Blair, R. W., Moodie, C. A., Isik, A. I., Erramuzpe, A., Kent, J. D., Goncalves, M., DuPre, E., Snyder, M., Oya, H., Ghosh, S. S., Wright, J., Durnez, J., Poldrack, R. A., & Gorgolewski, K. J. (2019). fMRIPrep: A robust preprocessing pipeline for functional MRI. Nature Methods, 16(1), 111–116. https://doi.org/10.1038/s41592-018-0235-4
+
+Glasser, M. F., Coalson, T. S., Robinson, E. C., Hacker, C. D., Harwell, J., Yacoub, E., Ugurbil, K., Andersson, J., Beckmann, C. F., Jenkinson, M., Smith, S. M., & Van Essen, D. C. (2016). A multi-modal parcellation of human cerebral cortex. Nature, 536(7615), 171–178. https://doi.org/10.1038/nature18933
+
+Glasser, M. F., Sotiropoulos, S. N., Wilson, J. A., Coalson, T. S., Fischl, B., Andersson, J. L., Xu, J., Jbabdi, S., Webster, M., Polimeni, J. R., Van Essen, D. C., & Jenkinson, M. (2013). The minimal preprocessing pipelines for the Human Connectome Project. NeuroImage, 80, 105–124. https://doi.org/10.1016/j.neuroimage.2013.04.127
+
+Parkes, L., Fulcher, B., Yücel, M., & Fornito, A. (2018). An evaluation of the efficacy, reliability, and sensitivity of motion correction strategies for resting-state functional MRI. NeuroImage, 171, 415–436. https://doi.org/10.1016/j.neuroimage.2017.12.073
+
+Smith, R. E., Tournier, J.-D., Calamante, F., & Connelly, A. (2012). Anatomically-constrained tractography: Improved diffusion MRI streamlines tractography through effective use of anatomical information. NeuroImage, 62(3), 1924–1938. https://doi.org/10.1016/j.neuroimage.2012.06.005
+
+Snoek, L., van der Miesen, M. M., Beemsterboer, T., van der Leij, A., Eigenhuis, A., & Steven Scholte, H. (2021). The Amsterdam Open MRI Collection, a set of multimodal MRI datasets for individual difference analyses. Scientific Data, 8, 85. https://doi.org/10.1038/s41597-021-00870-6
+
+Thiele, J. A., Faskowitz, J., Sporns, O., & Hilger, K. (2022). Multitask Brain Network Reconfiguration Is Inversely Associated with Human Intelligence. Cerebral Cortex, bhab473. https://doi.org/10.1093/cercor/bhab473
+
+Tournier, J.-D., Smith, R., Raffelt, D., Tabbara, R., Dhollander, T., Pietsch, M., Christiaens, D., Jeurissen, B., Yeh, C.-H., & Connelly, A. (2019). MRtrix3: A fast, flexible and open software framework for medical image processing and visualisation. NeuroImage, 202, 116137. https://doi.org/10.1016/j.neuroimage.2019.116137
+
+Van Essen, D. C., Smith, S. M., Barch, D. M., Behrens, T. E. J., Yacoub, E., & Ugurbil, K. (2013). The WU-Minn Human Connectome Project: An Overview. NeuroImage, 80, 62–79. https://doi.org/10.1016/j.neuroimage.2013.05.041
+
+Zamani Esfahlani, F., Faskowitz, J., Slack, J., Mišić, B., & Betzel, R. F. (2022). Local structure-function relationships in human brain networks across the lifespan. Nature Communications, 13(1), 2053. https://doi.org/10.1038/s41467-022-29770-y
+
+
+
+## Copyright 
+Copyright (cc) by Johanna L. Popp 
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />
+
+Files of SC_FC_Coupling_Task_Intelligence by Johanna L. Popp are licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+
+Note that external functions have other licenses that are provided in the `Functions` folder. 
 
 
 
