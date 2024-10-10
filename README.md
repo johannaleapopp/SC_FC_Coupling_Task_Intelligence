@@ -23,7 +23,7 @@ General intelligence was operationalized as latent *g*-factor from 12 cognitive 
 ## 5. Structure and Script Description 
 
 ### 5.1. HCP Data Prep 
-For the preparation of data from the HCP sample, the scripts should be run in the following order: 
+For the preparation of data from the HCP sample, the scripts should be run in the following order:   
 
 1.	`HCP_MRI_data_import`: Import of all MRI data from folder structure on local machine (SC matrices, resting-state fMRI and task fMRI time courses).
 2.	`HCP_prepare_behavioral_data`: Import and preparation of HCP behavioral data (Output: HCP_behavioral_personality_gscore).
