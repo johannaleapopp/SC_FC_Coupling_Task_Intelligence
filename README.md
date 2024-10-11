@@ -132,6 +132,7 @@ In order to perform the analyses conducted in the replication samples, the scrip
 ### 5.5. Posthoc Control Analyses 
 
 *Control Analysis Equal Frame Length*   
+
 Scripts found in this folder were used to conduct a control analysis where all scans were shortened to equal frame length (176 frames) in the main sample (HCP532). Other than the differing data, scripts were not changed and named similarly (see above for description). 
 
 ### 5.6. Functions 
