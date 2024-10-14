@@ -46,7 +46,7 @@ For the preparation of data from the HCP sample, the scripts should be run in th
 11. `HCP_compute_coupling_measures_task_x`: This script is based on a source script from Zamani Esfahlani et al. (2022) and was adjusted accordingly. It calculates coupling measure-specific coupling values by correlating regional connectivity profiles of the communication/similarity matrix (computed with `HCP_compute_coupling_measures_resting_state`) with the respective FC matrix.  
 <br>
 
-12. `HCP_split_lockbox_sample`: This script is used to partition the main sample (HCP) into a primary main sample (70%) and a lockbox sample (30%) to be able to conduct an initial replication. It takes into account the family structure in the HCP and makes sure that all families are in the same sample to keep them truly independent from one another.
+12. `HCP_split_lockbox_sample`: This script is used to partition the main sample (HCP) into a primary main sample (70%) and a lockbox sample (30%) to be able to conduct an initial replication. It takes the family structure in the HCP into account and makes sure that all families are in the same sample to keep them truly independent from one another.
 
 
 ### 5.2. AOMIC Data Prep 
