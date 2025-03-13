@@ -2,7 +2,7 @@
  
 ## 1. Scope
 
-This repository contains scripts that were used to conduct the analyses in **"Structural-Functional Brain Network Coupling During Task Performance Reveals Intelligence-Relevant Communication Strategies"** coauthored by Johanna L. Popp, Jonas A. Thiele, Joshua Faskowitz, Caio Seguin, Olaf Sporns and Kirsten Hilger (doi: will be updated after publication). In brief, we investigated the relationship between general intelligence and structural-functional brain network coupling (SC-FC coupling) operationalized with similarity and network communication measures during resting-state and seven different task conditions. The scripts found in this repository can be used to replicate all analyses or more generally, to study the association between intrinsic and task-induced SC-FC coupling and individual differences (e.g., in general intelligence). In case you have questions or trouble with running the scripts, feel free to reach out under [johanna.popp@uni-wuerzburg.de].
+This repository contains scripts that were used to conduct the analyses in **"Structural-Functional Brain Network Coupling During Task Performance Reveals Intelligence-Relevant Communication Strategies"** coauthored by Johanna L. Popp, Jonas A. Thiele, Joshua Faskowitz, Caio Seguin, Olaf Sporns and Kirsten Hilger (doi: will be updated after publication). In brief, we investigated the relationship between general intelligence and structural-functional brain network coupling (SC-FC coupling) operationalized with similarity and network communication measures during resting state and seven different task conditions. The scripts found in this repository can be used to replicate all analyses or more generally, to study the association between intrinsic and task-induced SC-FC coupling and individual differences (e.g., in general intelligence). In case you have questions or trouble with running the scripts, feel free to reach out under [johanna.popp@uni-wuerzburg.de].
 
 ## 2. Data 
 
@@ -46,7 +46,7 @@ For the preparation of data from the HCP sample, the scripts should be run in th
 11. `HCP_compute_coupling_measures_task_x`: This script is based on a source script from Zamani Esfahlani et al. (2022) and was adjusted accordingly. It calculates coupling measure-specific coupling values by correlating regional connectivity profiles of the communication/similarity matrix (computed with `HCP_compute_coupling_measures_resting_state`) with the respective FC matrix.  
 <br>
 
-12. `HCP_split_lockbox_sample`: This script is used to partition the main sample (HCP) into a primary main sample (70%) and a lockbox sample (30%) to be able to conduct an initial replication. It takes into account the family structure in the HCP and makes sure that all families are in the same sample to keep them truly independent from one another.
+12. `HCP_split_lockbox_sample`: This script is used to partition the main sample (HCP) into a primary main sample (70%) and a lockbox sample (30%) to be able to conduct an initial replication. It takes the family structure in the HCP into account and makes sure that all families are in the same sample to keep them truly independent from one another.
 
 
 ### 5.2. AOMIC Data Prep 
@@ -131,7 +131,8 @@ In order to perform the analyses conducted in the replication samples, the scrip
 
 ### 5.5. Posthoc Control Analyses 
 
-*Control Analysis Equal Frame Length* 
+*Control Analysis Equal Frame Length*   
+
 Scripts found in this folder were used to conduct a control analysis where all scans were shortened to equal frame length (176 frames) in the main sample (HCP532). Other than the differing data, scripts were not changed and named similarly (see above for description). 
 
 ### 5.6. Functions 
@@ -146,7 +147,8 @@ External functions and their licences can be found in this folder.
 
 Functions used in the scripts can be found in the functions folder. Some of the functions can be found elsewhere e.g., as part of the brain connectivity toolbox (Rubinov & Sporns, 2010, https://sites.google.com/site/bctnet/). Comments on the authorship and licenses of these functions are provided within the folder.
 
-**References**
+## References
+
 Civier, O., Smith, R. E., Yeh, C.-H., Connelly, A., & Calamante, F. (2019). Is removal of weak connections necessary for graph-theoretical analysis of dense weighted structural connectomes from diffusion MRI? NeuroImage, 194, 68–81. https://doi.org/10.1016/j.neuroimage.2019.02.039
 
 Cole, M. W., Ito, T., Schultz, D., Mill, R., Chen, R., & Cocuzza, C. (2019). Task activations produce spurious but systematic inflation of task functional connectivity estimates. NeuroImage, 189, 1–18. https://doi.org/10.1016/j.neuroimage.2018.12.054
